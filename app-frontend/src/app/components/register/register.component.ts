@@ -1,35 +1,36 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { AuthService } from '../../services/auth.service';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css',
+  styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent {
-  user = {
-    email: '',
-    password: '',
-  };
-  errorMessage: string | null = null;
+  constructor(private http: HttpClient, private router: Router) {}
 
-  constructor(private authService: AuthService, private router: Router) {}
-
-  register() {
-    this.authService.register(this.user).subscribe(
-      (response: any) => {
-        // Assuming the token or confirmation is returned in the response
-        this.router.navigate(['/login']);
-      },
-      (error: any) => {
-        this.errorMessage = 'Registration failed! Try again.';
-        console.error('Registration error:', error);
-      }
-    );
+  register(
+    name: string,
+    email: string,
+    password: string,
+    password_confirmation: string
+  ) {
+    this.http
+      .post<any>('http://localhost:8000/api/register', {
+        name,
+        email,
+        password,
+        password_confirmation,
+      })
+      .subscribe(
+        (response) => {
+          localStorage.setItem('token', response.token);
+          this.router.navigate(['/dashboard']);
+        },
+        (error) => {
+          console.error('Registration error:', error);
+        }
+      );
   }
 }
