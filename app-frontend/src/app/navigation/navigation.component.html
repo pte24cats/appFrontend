@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="navigation.component.css"/>
+
+<nav class="navbar navbar-expand-md navbar-light bg-body-tertiary">
+	<div class="container-fluid">
+		<button
+			class="navbar-toggler"
+			type="button"
+			aria-controls="navbarContent"
+			[attr.aria-expanded]="!collapsed"
+			aria-label="Toggle navigation"
+			(click)="collapsed = !collapsed"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+			<ul ngbNav [(activeId)]="activeId" class="navbar-nav mr-auto">
+				<li tabindex="1" [ngbNavItem]="1">
+                    <button ngbNavLink [routerLink]="['']"> Home </button>
+                </li>
+                <li tabindex="2" [ngbNavItem]="2">
+                    <a ngbNavLink [routerLink]="['/our-cats']"> Our Cats </a>
+                </li>
+                <li tabindex="3" [ngbNavItem]="3">
+                    <a ngbNavLink [routerLink]="['/about']"> About Us </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-secondary" style="font-size: large; font-weight: bold;" (click)="openSignInModal()"> Sign In </button>
+                </li>
+            </ul>
+		</div>
+	</div>
+</nav>

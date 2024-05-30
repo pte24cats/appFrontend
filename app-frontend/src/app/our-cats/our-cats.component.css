@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .filters {
+    flex: 1;
+    max-width: 25%; /* 1/4 of the container width */
+    padding: 5px; /* Optional: add padding for better spacing */
+  }
+  
+  .search-results {
+    flex: 3;
+    max-width: 75%; /* 3/4 of the container width */
+    padding: 5px; /* Optional: add padding for better spacing */
+  }

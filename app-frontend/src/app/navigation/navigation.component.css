@@ -1,0 +1,13 @@
+.nav-item {
+    color: #fee9e1;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 0.7rem;
+    background-color: rgb(252, 184, 157);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

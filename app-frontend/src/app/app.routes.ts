@@ -1,11 +1,30 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { OurCatsComponent } from './our-cats/our-cats.component';
+import { AboutComponent } from './about/about.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'dashboard', component: DashboardComponent },
+
+    {
+        path: '',
+        component: HomeComponent,
+        title: 'pte24cats'
+    },
+    {
+        path: 'our-cats',
+        component: OurCatsComponent,
+        title: 'Our Cats'
+    },
+    {
+        path: 'about',
+        component: AboutComponent,
+        title: 'About Us'
+    },
+    {
+        path: 'sign-in',
+        component: SignInComponent,
+        title: 'Sign In'
+    }
+
 ];
