@@ -1,0 +1,461 @@
+
+.header {
+    height: 1cm;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px;
+    padding: 0.5cm 0.8cm;
+}
+
+.logo {
+    width: 1.6cm;
+    margin-left: 0.6cm;
+}
+
+.nav-buttons {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-buttons li {
+    display: inline; 
+}
+
+.nav-button, .sign-in-button {
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.6cm;
+    color: black;
+    margin-right: 0.9cm;
+}
+
+.sign-in-button {
+    background-color: #DFC045;
+    color: white;
+    padding: 0.3cm 1cm;
+    border-radius: 40px;
+    margin-left: 0.5cm;
+}
+
+
+.nav-buttons li:last-child .nav-button, .nav-buttons li:last-child .sign-in-button {
+    margin-right: 0;
+}
+
+
+.nav-buttons li:not(:last-child) .nav-button,
+.nav-buttons li:not(:last-child) .sign-in-button {
+    margin-right: 0.9cm;
+}
+
+/*ABOUT US PAGE PART1*/
+.about-us-page {
+    height: 4cm;
+    background-color: white;
+}
+.about-us-page h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5cm;
+    color: black;
+    text-align: center;
+}
+
+.about-us-page p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.45cm;
+    text-align: center;
+    padding-left:  5cm;
+    padding-right: 5cm;
+    padding-bottom: 1cm;
+}
+
+.about-us-page img {
+    width: 100%;
+    height: auto;
+}
+
+/*Nav-Bookmark*/
+
+.section-nav {
+    display: flex;
+    height: 1.5cm;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 4cm;
+    margin: 2.2cm 0 0 0;
+}
+
+.section-nav h2 {
+    font-size: 0.5cm;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-right: 1cm;
+}
+
+.section-nav .nav-button {
+    font-size: 0.5cm;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-decoration: none;
+    margin: 0 0.5cm;
+}
+
+.section-nav .nav-button:hover {
+    text-decoration: underline;
+}
+
+.divider-line {
+    border: none;
+    border-top: 1px solid #201b1b;
+    margin: 0.5cm 0 0 0;
+}
+
+/* OUR MISSION*/
+.mission-section {
+    height: 14cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-mission, .right-mission {
+    width: 50%;
+    padding: 1cm;
+    box-sizing: border-box;
+}
+
+.left-mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-mission {
+    padding-left: 2cm;
+    padding-right: 2cm;
+}
+
+.right-mission h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.03cm;
+    color:#DFC045;
+    margin-bottom: 1cm;
+    text-align: justify;
+}
+
+.right-mission p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.5cm;
+    color: black;
+    text-align: justify;
+    margin-bottom: 0.5cm;
+}
+
+.divider-line1 {
+    border: none;
+    border-top: 1px solid #201b1b;
+    margin: 0.5cm 0 0 0;
+}
+
+/*WHAT WE DO*/
+.what-we-do-section h4 {
+    font-size: 1cm;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-align: center;
+    margin: 2cm 0 1cm;
+  }
+  
+  .what-we-do-section h4 .highlight {
+    color:#DFC045;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 1cm;
+    font-size: 1px;
+  }
+  
+  .card1, .card2, .card3 {
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    background-color: #f6f3f3;
+    transition: 0.6s;
+    transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+  }
+  
+  .card1:hover, .card2:hover, .card3:hover {
+    transform: rotatex(0deg);
+    transition: 0.6s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card1 img, .card2 img, .card3 img {
+    width: 1.2cm;
+    height: auto;
+    margin-top: 1cm;
+  }
+  
+  .card1 h5, .card2 h5, .card3 h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin: 0.5cm 0;
+    
+  }
+  
+  .card1 p, .card2 p, .card3 p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.35cm;
+    color: black;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis
+  }
+
+
+
+/*STORIES*/
+.stories {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: white;
+    height: 16cm;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.stories-left {
+    padding-left: 80px;
+    width: 50%;
+}
+
+.stories-left h1 {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3cm;
+    line-height: 65px;
+}
+
+.stories-left h1 .highlight {
+    color: #DFC045;
+}
+
+.stories-left p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.55cm;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-right: 80px;
+
+}
+
+.stories-left .contact-us-button {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.55cm;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #DFC045;
+    color: white;
+    padding: 6px 1px;
+    border-radius: 40px;
+    margin-top: 60px;
+    margin-right: 250px;
+    margin-bottom: 1cm;
+}
+
+
+.stories-right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+  }
+
+  .card {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.5s, z-index 0.5s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-1 {
+    z-index: 20;
+    transform: rotate(-10deg);
+  }
+  
+  .card-2 {
+    z-index: 30;
+
+    filter: blur(60%);
+  }
+  
+  .card-3 {
+    z-index: 10;
+
+    transform: rotate(10deg);
+    filter: blur(60%);
+  }
+  
+  .card-4 {
+    z-index: 5;
+    filter: blur(60%);
+  }
+  
+  .card-5 {
+    z-index: 1;
+    filter: blur(60%);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .circle-frame {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  .object-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  blockquote {
+    text-align: center;
+    color: #6B7280;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .adopter-name {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #DFC045;
+  }
+  
+  /* Additional card styles */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .cards .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .cards .card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cards .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @keyframes fall {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+  }
+  
+  .card:hover {
+    animation: fall 0.5s forwards;
+    z-index: 40;
+  }
+  
+  /* Additional card styles */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .cards .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .cards .card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cards .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+
+/*SECTIONS*/
+
+.section {
+    padding: 2cm 5%;
+}
+
+.section h3 {
+    font-size: 1.2cm;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 1cm;
+}

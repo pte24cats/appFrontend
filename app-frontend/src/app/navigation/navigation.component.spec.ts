@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
 import { NavigationComponent } from './navigation.component';
 
 describe('NavigationComponent', () => {
@@ -8,7 +9,8 @@ describe('NavigationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavigationComponent]
+      declarations: [NavigationComponent],
+      imports: [NgbModule, RouterModule]
     })
     .compileComponents();
     

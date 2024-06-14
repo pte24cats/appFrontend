@@ -1,13 +1,60 @@
-.nav-item {
-    color: #fee9e1;
-    font-size: larger;
-    font-weight: bold;
-}
-
 .navbar {
-    padding: 0.7rem;
-    background-color: rgb(252, 184, 157);
+    padding: 0px;
+    background-color: white;
     position: fixed;
     top: 0;
-    width: 100%;
-}
+    width: 100%;  
+   }
+   
+   .header {
+       height: 1cm;
+       background-color: white;
+       padding: 0.5cm 0.8cm;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       border: 0px;
+   }
+   
+   .logo {
+       width: 1.6cm;
+   }
+   
+   .nav-buttons {
+       display: inline;
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   
+   .nav-buttons li {
+       display: inline;
+   }
+   
+   .nav-button, .sign-in-button {
+       text-decoration: none;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 0.6cm;
+       color: black;
+       margin-right: 0.9cm;
+   }
+   
+   .sign-in-button {
+       background-color: #DFC045;
+       color: white;
+       padding: 0.3cm 1cm;
+       border: 0px;
+       border-radius: 40px;
+       margin-left: 0.5cm;
+   }
+   
+   
+   .nav-buttons li:last-child .nav-button, 
+   .nav-buttons li:last-child .sign-in-button {
+       margin-right: 0;
+   }
+   
+   .nav-buttons li:not(:last-child) .nav-button,
+   .nav-buttons li:not(:last-child) .sign-in-button {
+       margin-right: 0.9cm;
+   }

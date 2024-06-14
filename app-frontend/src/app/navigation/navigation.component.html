@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="navigation.component.css"/>
-
-<nav class="navbar navbar-expand-md navbar-light bg-body-tertiary">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark bg-white">
 	<div class="container-fluid">
 		<button
 			class="navbar-toggler"
@@ -14,23 +12,15 @@
 		</button>
 
 		<div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
-			<ul ngbNav [(activeId)]="activeId" class="navbar-nav mr-auto">
-				<li tabindex="1" [ngbNavItem]="1">
-                    <button ngbNavLink [routerLink]="['']"> Home </button>
-                </li>
-                <li tabindex="2" [ngbNavItem]="2">
-                    <a ngbNavLink [routerLink]="['/our-cats']"> Our Cats </a>
-                </li>
-                <li tabindex="3" [ngbNavItem]="3">
-                    <a ngbNavLink [routerLink]="['/about']"> About Us </a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <button type="button" class="btn btn-secondary" style="font-size: large; font-weight: bold;" (click)="openSignInModal()"> Sign In </button>
-                </li>
-            </ul>
+			<div class="header">
+				<img src="logo.png" alt="Logo" class="logo">
+				<div class="nav-buttons">
+					<a href="#" class="nav-button">Home</a>
+					<a href="#" class="nav-button">Adopt a Cat</a>
+					<a href="#" class="nav-button">About Us</a>
+					<button type="button" class="sign-in-button" (click)="openSignInModal()">Sign In</button>
+ 				</div>
+			</div>
 		</div>
 	</div>
 </nav>
