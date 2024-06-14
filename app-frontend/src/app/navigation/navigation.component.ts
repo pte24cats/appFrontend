@@ -15,9 +15,8 @@ import { ModalService } from '../../services/modal.service';
 })
 export class NavigationComponent {
 
-  activeId = 1; 
   collapsed = true;
-
+  
   constructor(private modalService: ModalService) {}
 
   openSignInModal() {
@@ -25,3 +24,4 @@ export class NavigationComponent {
   }
 
 }
+
