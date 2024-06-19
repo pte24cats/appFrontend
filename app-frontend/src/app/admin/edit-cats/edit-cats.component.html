@@ -47,7 +47,7 @@
                     <div class="col-md-6">
                         <label>Image</label>
                         <div class="form-row" style="padding-left: 10px;">
-                            <input [ngModel]="newCat.cat_picture" name="cat_picture" type="file" (change)="onFileChange($event)" />
+                            <input [(ngModel)]="newCat.cat_picture" type="text" class="form-control" name="cat_picture" placeholder="Cat Picture" required />
                         </div>
                     </div>
                 </div>
@@ -84,8 +84,8 @@
             <td>{{ cat.cat_gender }}</td>
             <td>{{ cat.cat_breed }}</td>
             <td>
-                <div *ngIf="newCat.cat_picture; else noImage">
-                    <img [src]="newCat.cat_picture" alt="Cat Picture" width="50" height="50"/>
+                <div *ngIf="cat.cat_picture; else noImage">
+                    <img [src]="cat.cat_picture" alt="Cat Picture" width="50" height="50"/>
                 </div>
                 <ng-template #noImage>
                     <span>None</span>
