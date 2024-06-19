@@ -38,7 +38,7 @@ export class EditCatsComponent implements OnInit {
     cat_age: 0,
     cat_gender: '',
     cat_breed: '',
-    cat_picture: null
+    cat_picture: ''
   };
 
   fetchCats(): void {
@@ -84,7 +84,7 @@ export class EditCatsComponent implements OnInit {
       cat_age: 0,
       cat_gender: '',
       cat_breed: '',
-      cat_picture: null
+      cat_picture: ''
     };
   }
 }
