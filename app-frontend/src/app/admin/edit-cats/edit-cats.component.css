@@ -1,0 +1,13 @@
+label {
+    padding: 15px 0px 0px;
+    font-size: large;
+}
+
+.card {
+    margin-bottom: 3rem;
+}
+
+.bg-yellow {
+    background-color: #DFC045;
+    color: black;
+}

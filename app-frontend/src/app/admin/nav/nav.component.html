@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="nav.component.css">
+
+<nav class="navbar sticky-top bg-yellow flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">pte24Cats</a>
+    <button class="navbar-toggler position-absolute d-md-none" type="button"
+        data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" (click)="this.isShown = !this.isShown">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+        <button type="button" class="btn btn-light" [routerLink]="['']">Sign out</button>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+<div>
+    <nav [ngbCollapse]="!isShown" id="sidebarMenu" class="col-md-3 col-lg-2 bg-light-theme navbar sidebar collapsed">
+        <div class="position-sticky pt-3">
+            <ul ngbNav [(activeId)]="activeId" class="nav flex-column">
+            <li [ngbNavItem]="1" class="nav-item">
+                <a ngbNavLink class="nav-link" aria-current="page" [routerLink]="['dashboard']">
+                Dashboard
+                </a>
+            </li>
+            <li [ngbNavItem]="2" class="nav-item">
+                <a ngbNavLink class="nav-link" [routerLink]="['users']">
+                Users
+                </a>
+            </li>
+            <li [ngbNavItem]="3" class="nav-item">
+                <a ngbNavLink class="nav-link" [routerLink]="['edit-cats']">
+                Cats
+                </a>
+            </li>
+            <li [ngbNavItem]="4" class="nav-item">
+                <a ngbNavLink class="nav-link">
+                Sponsors
+                </a>
+            </li>
+            <li [ngbNavItem]="5" class="nav-item">
+                <a ngbNavLink class="nav-link">
+                Adoption Requests
+                </a>
+            </li>
+            <li [ngbNavItem]="6" class="nav-item">
+                <a ngbNavLink class="nav-link" href="#">
+                Content
+                </a>
+            </li>
+            <li [ngbNavItem]="7" class="nav-item">
+                <a ngbNavLink class="nav-link" href="#">
+                Analytics
+                </a>
+            </li>
+            <li [ngbNavItem]="8" class="nav-item">
+                <a ngbNavLink class="nav-link" href="#">
+                Settings
+                </a>
+                </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Saved reports</span>
+            <a class="link-secondary" href="#" aria-label="Add a new report">
+                <span data-feather="plus-circle"></span>
+            </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Current month
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Last quarter
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Social engagement
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Year-end sale
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <router-outlet></router-outlet>
+</main>
