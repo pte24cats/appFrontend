@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from '@angular/common/http';
-import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-sign-in',
   standalone: true,
   imports: [
     NgbNavModule,
-    HttpClientModule
   ],
   templateUrl: './sign-in.component.html',
   styleUrl: './sign-in.component.css'
@@ -25,11 +23,11 @@ export class SignInComponent {
     this.http
       .post<any>('http://localhost:8000/api/login', { email, password })
       .subscribe(
-        (response) => {
+        (response: any) => {
           localStorage.setItem('token', response.token);
           this.router.navigate(['']);
         },
-        (error) => {
+        (error: any) => {
           console.error('Login error:', error);
         }
       );
@@ -49,11 +47,11 @@ export class SignInComponent {
         password_confirmation,
       })
       .subscribe(
-        (response) => {
+        (response: any) => {
           localStorage.setItem('token', response.token);
           this.router.navigate(['/dashboard']);
         },
-        (error) => {
+        (error: any) => {
           console.error('Registration error:', error);
         }
       );
