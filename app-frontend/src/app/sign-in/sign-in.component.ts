@@ -23,7 +23,7 @@ export class SignInComponent {
 
   login(email: string, password: string) {
     this.http
-      .post<any>('http://localhost:8000/api/login', { email, password })
+      .post<any>('http://127.0.0.1:8000/login', { email, password })
       .subscribe(
         (response: any) => {
           localStorage.setItem('token', response.token);
@@ -42,7 +42,7 @@ export class SignInComponent {
     password_confirmation: string
   ) {
     this.http
-      .post<any>('http://localhost:8000/api/register', {
+      .post<any>('http://localhost:8000/register', {
         name,
         email,
         password,

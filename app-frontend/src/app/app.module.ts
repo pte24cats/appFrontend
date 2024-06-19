@@ -8,16 +8,19 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CatsService } from '../services/cat.service';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { NavigationComponent } from './navigation/navigation.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
+    
   ],
   imports: [
+    AppComponent,
     BrowserModule,
     FormsModule,
+    NavigationComponent,
+    HomeComponent,
     RouterModule.forRoot([
       { path: '', component: HomeComponent }
   
