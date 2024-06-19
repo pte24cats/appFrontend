@@ -3,16 +3,21 @@
     height: 65px;
 }
 
+h4 {
+    font-size: 1.7em;
+}
+
 .yellow {
     background-color: #DFC045;
 }
 
 .nav-item {
-    font-size: large;
+    font-size: 1.5em;
     font-family: 'Times New Roman', Times, serif;
+    padding: 0px 10px;
 }
 
 #signInButton {
-    font-size: large;
+    font-size: 1.5em;
     font-family: 'Times New Roman', Times, serif;
 }
