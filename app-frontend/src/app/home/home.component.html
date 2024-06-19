@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<!-- <html lang="en"> -->
 
-    <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Your Page Title</title>
         <link rel="stylesheet" type="text/css" href="home.component.css"/>
         <script src="script.js" defer></script>
-    </head>
 
-<body>
-    <div class="header">
-        <img src="png/logo.png" alt="Logo" class="logo">
-        <ul class="nav-buttons">
-            <li><a href="#" class="nav-button">Home</a></li>
-            <li><a href="#" class="nav-button">Adopt a Cat</a></li>
-            <li><a href="/about" class="nav-button">About Us</a></li>
-            <li><a href="#" class="sign-in-button">Sign In</a></li>
-        </ul>
-    </div>
+
+        <div>
+            <app-navigation></app-navigation>
+        </div>
 
     <div class="content">
     <h1>Bring Home A Furry Friend & <br>
@@ -27,7 +20,7 @@
     </h1>
     <p> Our mission is to connect loving families with adorable cats, ensuring <br> every feline finds a safe, happy, and forever home.</p>
     <a href="/our-cats" class="adopt-button">ADOPT NOW!</a>
-    <img src="png/content-cats.png" alt="Main Page Cats" class="content-image">
+    <img src="/assets/png/content-cats.png" alt="Main Page Cats" class="content-image">
 
     
     <div class="statistics">
@@ -57,10 +50,10 @@
     </div>
 
         <div class="slideshow-container">
-            <div class="slideshow-inner">
+            <div class="slideshow-inner" #slideshowInner>
                 <!-- cat no1 info:Virag -->
                 <div class="slide">
-                    <img class="cat-images" src="png/virag.png" alt="Virag">
+                    <img class="cat-images" src="assets/png/virag.png" alt="Virag">
                     <div class="cat-description">
                         <div class="cat-name"><strong>Virag</strong></div>
                         <ul class="cat-details">
@@ -74,7 +67,7 @@
 
                 <!--cat no2 info:OReo-->
                 <div class="slide">
-                    <img class="cat-images" src="png/Oreo.png" alt="Oreo">
+                    <img class="cat-images" src="assets/png/Oreo.png" alt="Oreo">
                     <div class="cat-description">
                         <div class="cat-name"><strong>Oreo</strong></div>
                         <ul class="cat-details">
@@ -87,7 +80,7 @@
 
                 <!--cat no3 info:Pat & Mat-->
                 <div class="slide">
-                    <img class="cat-images" src="png/pat&mat.png" alt="Pat & Mat">
+                    <img class="cat-images" src="assets/png/pat&mat.png" alt="Pat & Mat">
                     <div class="cat-description">
                         <div class="cat-name"><strong>Pat & Mat</strong></div>
                         <ul class="cat-details">
@@ -101,7 +94,7 @@
 
                 <!--cat no4 info:Api-->
                 <div class="slide">
-                    <img class="cat-images" src="png/api.png" alt="Api">
+                    <img class="cat-images" src="assets/png/api.png" alt="Api">
                     <div class="cat-description">
                         <div class="cat-name"><strong>Api</strong></div>
                         <ul class="cat-details">
@@ -115,7 +108,7 @@
 
                 <!--cat no5 info: Vanya-->
                 <div class="slide">
-                    <img class="cat-images" src="png/vanya.png" alt="Vanya">
+                    <img class="cat-images" src="assets/png/vanya.png" alt="Vanya">
                     <div class="cat-description">
                         <div class="cat-name"><strong>Vanya</strong></div>
                         <ul class="cat-details">
@@ -129,7 +122,7 @@
 
                 <!--cat no6 info: Ivy-->
                 <div class="slide">
-                    <img class="cat-images" src="png/ivy.png" alt="Ivy">
+                    <img class="cat-images" src="assets/png/ivy.png" alt="Ivy">
                     <div class="cat-description">
                         <div class="cat-name"><strong>Ivy</strong></div>
                         <ul class="cat-details">
@@ -144,7 +137,7 @@
 
                 <!--cat no7 info: Boci-->
                 <div class="slide">
-                    <img class="cat-images" src="png/boci.png" alt="Boci">
+                    <img class="cat-images" src="assets/png/boci.png" alt="Boci">
                     <div class="cat-description">
                         <div class="cat-name"><strong>Boci</strong></div>
                         <ul class="cat-details">
@@ -158,7 +151,7 @@
 
                 <!--cat no8 info: Alaka-->
                 <div class="slide">
-                    <img class="cat-images"  src="png/alaka.png" alt="Alaka">
+                    <img class="cat-images"  src="assets/png/alaka.png" alt="Alaka">
                     <div class="cat-description">
                         <div class="cat-name"><strong>Alaka</strong></div>
                         <ul class="cat-details">
@@ -172,7 +165,7 @@
 
                 <!--cat no9 info: Leri-->
                 <div class="slide">
-                    <img class="cat-images" src="png/leri.png" alt="Leri">
+                    <img class="cat-images" src="assets/png/leri.png" alt="Leri">
                     <div class="cat-description">
                         <div class="cat-name"><strong>Leri</strong></div>
                         <ul class="cat-details">
@@ -193,7 +186,7 @@
             <h1>Why adopt a <br> 
                 cat from <br> 
                 <span class="highlight">PTE Cats24?</span></h1>
-            <img src="png/pawsprint.png" alt="Paws-Print" class="page3-paws">
+            <img src="assets/png/pawsprint.png" alt="Paws-Print" class="page3-paws">
         </div>
         
         <div class="right-section">
@@ -220,25 +213,25 @@
 
         <div class="stepbystep">
             <div class="steps">
-                <div class="step-img"><img src="png/step1.png" alt="Step 1"></div>
+                <div class="step-img"><img src="assets/png/step1.png" alt="Step 1"></div>
                 <div class="step-header"><strong>Find Your Cat</strong></div>
                 <div class="step-description">Browse our gallery or visit our center to find the perfect cat for you.</div>
             </div>
 
             <div class="steps">
-                <div class="step-img"><img src="png/step2.png" alt="Step 2"></div>
+                <div class="step-img"><img src="assets/png/step2.png" alt="Step 2"></div>
                 <div class="step-header"><strong>Apply Online</strong></div>
                 <div class="step-description">Provide your details so we can ensure you have a suitable environment for your new furry friend.</div>
             </div>
         
             <div class="steps">
-                <div class="step-img"><img src="png/step3.png" alt="Step 3"></div>
+                <div class="step-img"><img src="assets/png/step3.png" alt="Step 3"></div>
                 <div class="step-header"><strong>Get Ready</strong></div>
                 <div class="step-description">Receive advice from us and prepare all the essentials for your cat.</div>
             </div>
 
             <div class="steps">
-                <div class="step-img"><img src="png/step4.png" alt="Step 4"></div>
+                <div class="step-img"><img src="assets/png/step4.png" alt="Step 4"></div>
                 <div class="step-header"><strong>Welcome Home</strong></div>
                 <div class="step-description">Bring your cat home and start building a loving bond!</div>
             </div>
@@ -267,7 +260,7 @@
                 <div class="card card-1">
                 <div class="card-content">
                     <div class="circle-frame">
-                    <img src="png/story1.png" alt="Story 1" class="object-cover">
+                    <img src="assets/png/story1.png" alt="Story 1" class="object-cover">
                     </div>
                     <blockquote>"I can't thank PTEcats enough for helping me find my perfect cat companion. 
                     From the moment I walked into their center, I felt welcomed and understood. 
@@ -281,7 +274,7 @@
                 <div class="card card-2">
                 <div class="card-content">
                     <div class="circle-frame">
-                    <img src="png/story2.png" alt="Story 2" class="object-cover">
+                    <img src="assets/png/story2.png" alt="Story 2" class="object-cover">
                     </div>
                     <blockquote>"Adopting from PTEcats was the best decision I ever made! 
                     My new furry friend has brought so much happiness into my life. 
@@ -296,7 +289,7 @@
                 <div class="card card-3">
                 <div class="card-content">
                     <div class="circle-frame">
-                    <img src="png/story3.png" alt="Story 3" class="object-cover">
+                    <img src="assets/png/story3.png" alt="Story 3" class="object-cover">
                     </div>
                     <blockquote>"My experience with PTEcats was fantastic. 
                     They made the adoption process easy and stress-free. 
@@ -311,7 +304,7 @@
                 <div class="card card-3">
                     <div class="card-content">
                         <div class="circle-frame">
-                        <img src="png/story3.png" alt="Story 3" class="object-cover">
+                        <img src="assets/png/story3.png" alt="Story 3" class="object-cover">
                         </div>
                         <blockquote>"I am really grateful that I found my Alaka in PTE Cats.
                             He has been great compnanion since then."
@@ -324,7 +317,7 @@
                 <div class="card card-3">
                     <div class="card-content">
                         <div class="circle-frame">
-                        <img src="png/story1.png" alt="Story 3" class="object-cover">
+                        <img src="assets/png/story1.png" alt="Story 3" class="object-cover">
                         </div>
                         <blockquote>"Hello, it's ileri and leri.
                             I have never ever been this happier."
@@ -342,21 +335,21 @@
     <footer class="footer">
             <div class="footer-left">
                 <div class="footer-item">
-                    <img src="png/dotpaw.png" alt="Dot Paw" class="dot-paw">
+                    <img src="assets/png/dotpaw.png" alt="Dot Paw" class="dot-paw">
                     <span>Contact Us</span>
                 </div>
 
                 <div class="footer-item">
-                    <img src="png/dotpaw.png" alt="Dot Paw" class="dot-paw">
+                    <img src="assets/png/dotpaw.png" alt="Dot Paw" class="dot-paw">
                     <span>Location</span>
                 </div>
             </div>
 
             <div class="footer-right">
                 <div class="footer-item">
-                    <a href="facebook.com"><img src="png/fb-icon.png" alt="Facebook" class="footer-icon"></a>
-                    <a href="instagram.com"><img src="png/ig-icon.png" alt="Instagram" class="footer-icon"></a>
-                    <a href="tel: +36208082365"><img src="png/phone-icon.png" alt="Phone" class="footer-icon"></a>
+                    <a href="facebook.com"><img src="assets/png/fb-icon.png" alt="Facebook" class="footer-icon"></a>
+                    <a href="instagram.com"><img src="assets/png/ig-icon.png" alt="Instagram" class="footer-icon"></a>
+                    <a href="tel: +36208082365"><img src="assets/png/phone-icon.png" alt="Phone" class="footer-icon"></a>
                 </div>
             </div>
     </footer>
@@ -391,5 +384,4 @@
      
 
 </script>
-</body>
-</html>
+<!-- </html> -->

@@ -76,6 +76,7 @@
 .about-us-page img {
     width: 100%;
     height: auto;
+    margin-bottom: 20px; 
 }
 
 /*Nav-Bookmark*/
@@ -87,7 +88,7 @@
     align-items: center;
     background-color: white;
     padding-top: 4cm;
-    margin: 2.2cm 0 0 0;
+    margin: 10px;
 }
 
 .section-nav h2 {
