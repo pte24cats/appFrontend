@@ -1,4 +1,3 @@
-
 .header {
     height: 1cm;
     background-color: white;
@@ -629,7 +628,6 @@
 
 /*FOOTER*/
 .footer {
-  height: 1.4cm;
   background-color: #DFC045;
   padding: 20px;
   margin-top:60px;
