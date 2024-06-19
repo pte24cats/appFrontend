@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
@@ -8,10 +8,12 @@ import { HttpClient } from '@angular/common/http';
   selector: 'app-sign-in',
   standalone: true,
   imports: [
+    NgbModule,
     NgbNavModule,
   ],
   templateUrl: './sign-in.component.html',
-  styleUrl: './sign-in.component.css'
+  styleUrl: './sign-in.component.css',
+  providers: [NgbActiveModal]
 })
 export class SignInComponent {
 

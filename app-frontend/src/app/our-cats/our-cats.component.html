@@ -1,10 +1,68 @@
-<link rel="stylesheet" href="our-cats.component.css"/>
+<!DOCTYPE html>
 
-<app-navigation></app-navigation>
+<html lang="en">
 
-<div class="container-fluid">
-    <p style="padding-top: 100px;"> This will show all the cats. There will be one cat component displayed for every cat in the database. <br>
-        Cat components have been generated with a service and interface, but have not been implemented yet. 
-        Also working on search filter functionality.
-    </p>
-</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Cats page</title>
+        <link rel="stylesheet" type="text/css" href="our-cats.component.css"/>
+        <script src="script.js" defer></script>
+    </head>
+
+<body>
+    <div class="header">
+        <img src="oc-png/logo.png" alt="Logo" class="logo">
+        <ul class="nav-buttons">
+            <li><a href="#" class="nav-button">Home</a></li>
+            <li><a href="#" class="nav-button">Adopt a Cat</a></li>
+            <li><a href="app/about" class="nav-button">About Us</a></li>
+            <li><a href="#" class="sign-in-button">Sign In</a></li>
+        </ul>
+    </div>
+
+    <!--TITLE PART-->
+    <div class="our-cats-page">
+        <div class="header-container">
+            <img src="oc-png/pawdot.png" alt="Dot Paw" class="dot-paw left-dot-paw">
+            <h1>OUR CATS</h1>
+            <img src="oc-png/pawdot.png" alt="Dot Paw" class="dot-paw right-dot-paw">
+        </div>
+        <p>Discover the wonderful cats currently in our care, each one looking for a loving forever home.</p>
+    </div>
+
+    <!--NaV BAR-->
+    <div class="section-nav">
+        <h2>OUR CATS   / </h2>
+        <a href="#cats-of-the-week" class="nav-button">Cats of the week</a>
+        <a href="#our-cats" class="nav-button">Our Cats</a>
+        <a href="#adoption-process" class="nav-button">Adoption Process</a>
+        <a href="#preparing-home" class="nav-button">Preparing Home</a>
+        <a href="#faq" class="nav-button">FAQ</a>
+        <a href="#contact-us" class="nav-button">Contact Us</a>
+    </div>
+    <hr class="divider-line">
+
+    <!-- Nice and Bad Cat of the Week Section -->
+    <div class="cat-week-section">
+        <div class="left-section">
+            <h2>NICE</h2>
+            <div class="mushroom-frame">
+                <img src="oc-png/vanya.png" alt="Vanya">
+            </div>
+            <h3>VANYA</h3>
+            <p>has opened up and showed the staff how much she loves belly rubs.</p>
+        </div>
+        <div class="middle-section">
+            <h1>CATS<br>OF<br>THIS<br>WEEK</h1>
+        </div>
+
+        <div class="right-section">
+            <h2>BAD</h2>
+            <div class="mushroom-frame">
+                <img src="oc-png/api.png" alt="Api">
+            </div>
+            <h3>API</h3>
+            <p>stole treats from Boci, his BLIND roommate.</p>
+        </div>
+    </div>

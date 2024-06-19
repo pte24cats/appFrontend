@@ -137,6 +137,8 @@
     letter-spacing: 0.5px;
 }
 
+/*OUR CATS*/
+
 .catsgallery {
     background-color: #F6F3F3;
     padding-top: 0.3cm;
@@ -157,8 +159,8 @@
     font-size: 0.6cm;
     letter-spacing: 1.8px;
     padding: 0.4cm 0.6cm;
-    margin: 0.5cm 12.4cm 0cm 12.4cm;
     text-align: center;
+    margin-left: 16.5cm;
 }
 
 .catsgallery h1 {
@@ -248,6 +250,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*WHY US*/
 .protect-info {
     background-color: white;
     height: 17cm;
@@ -287,12 +290,12 @@
 
 .right-section p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
     line-height: 30px;
     text-align: justify;
-    margin-bottom: 20px;
-    margin-top: 65px;
+    margin-bottom: 0px;
+    margin-top: 80px;
 
 }
 
@@ -304,7 +307,7 @@
     margin-top: 40px;
 }
 
-
+/*PROCESS PART*/
 .process {
     background-color: #F6F3F3;
     height:16cm;
@@ -321,7 +324,7 @@
     font-size: 0.56cm;
     letter-spacing: 1.8px;
     padding: 0.2cm 0.6cm;
-    margin: 0.5cm 12.4cm 0cm 12.4cm;
+    margin-left: 16.5cm;
     text-align: center;
 }
 
@@ -564,7 +567,7 @@
   }
   
   .card:hover {
-    animation: fall 0.5s forwards;
+    animation: fall 1s forwards;
     z-index: 40;
   }
   
@@ -598,12 +601,7 @@
   }
   
   
-  
-  
-  
-  
-
-/*FOOTER*/
+  /*FOOTER*/
 .footer {
     height: 1.4cm;
     background-color: #DFC045;
@@ -612,51 +610,60 @@
     align-items: center;
     justify-content: space-between;
     display: flex;
-}
-
-
-.footer-left {
+  }
+  
+  
+  .footer-left {
     display: flex;
     width: 50%;
     margin-left: 60px;
     margin-top: 10px;
     margin-bottom:30px;
     align-items: center;
-}
-
-.footer-item {
+  }
+  
+  .footer-item {
     display: flex;
     align-items: center;
-    margin-right: 2cm;
-}
-
-.footer-item span {
+    margin-right: 0.7cm;
+  }
+  
+  .footer-item + .footer-item {
+    margin-left: 0.7cm; 
+  }
+  
+  .footer-item span,
+  .footer-link {
     font-size: 0.5cm;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1.2px;
-
-}
-
-.dot-paw {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .dot-paw {
     width: 20px;
     height: auto;
     margin-right: 10px;
-}
-
-
-.footer-right {
+  }
+  
+  
+  .footer-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-.footer-icon {
+  }
+  
+  .footer-icon {
     width: 30px;
     height: 30px;
     margin: 0 10px;
-
-}
-
-
-
+  
+  }
+  
+  
 
