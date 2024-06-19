@@ -59,8 +59,12 @@ export class EditCatsComponent implements OnInit {
     const formData = new FormData();
     Object.keys(this.newCat).forEach(key => {
       const value = (this.newCat as any)[key];
-      if (key === 'cat_picture' && value instanceof File) {
-        formData.append(key, value);
+      if (key === 'cat_picture') {
+        if (typeof value === 'string') {
+          formData.append(key, value);
+        } else if (value instanceof File) {
+          formData.append(key, value);
+        }
       } else {
         formData.append(key, value as string | Blob);
       }
@@ -70,6 +74,7 @@ export class EditCatsComponent implements OnInit {
       this.resetNewCat();
     });
   }
+
 
   onFileChange(event: any): void {
     this.newCat.cat_picture = event.target.files[0];
