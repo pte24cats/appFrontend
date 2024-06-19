@@ -8,7 +8,7 @@ import { Cat } from '../interfaces/cat';
   providedIn: 'root'
 })
 export class CatsService {
-  private apiUrl = 'http://127.0.0.1:8000/api/cats';
+  private apiUrl = 'http://127.0.0.1:8000/cats';
 
   constructor(private http: HttpClient) { }
 

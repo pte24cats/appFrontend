@@ -61,7 +61,7 @@
     padding-bottom: 1cm;
     border-radius: 40px;
     margin: 0cm 0.5cm 2cm 0.5cm;
-    height: 26cm;
+    height: auto;
 }
 
 .content h1 {
@@ -145,7 +145,7 @@
     padding-bottom: 1cm;
     border-radius: 0px;
     margin-top: 1cm;
-    height: 4.8cm;
+    height: auto;
 }
 
 .solid1 {
@@ -245,7 +245,7 @@
     font-size: 0.4cm;
     margin-bottom: 3px;
     padding-left: 20px;
-    background: url('/assets/png/dotpaw.png') no-repeat left center;
+    background: url('/assets/home/dotpaw.png') no-repeat left center;
     background-size: 10px 10px;
     font-family: 'Times New Roman', Times, serif;
 }
