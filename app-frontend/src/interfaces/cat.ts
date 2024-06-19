@@ -7,5 +7,5 @@ export interface Cat {
     cat_age: number;
     cat_gender: string;
     cat_breed: string;
-    cat_picture?: File | string | null;
+    cat_picture?: string;
   }

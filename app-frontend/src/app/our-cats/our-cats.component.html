@@ -47,3 +47,25 @@
         <p>stole treats from Boci, his BLIND roommate.</p>
     </div>
 </div>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let cat of cat">
+        <div class="card mb-4">
+          <img *ngIf="cat.cat_picture" class="card-img-top" [src]="cat.cat_picture" alt="Image of {{ cat.cat_name }}">
+          <img *ngIf="!cat.cat_picture" class="card-img-top placeholder-image">
+          <div class="card-body">
+            <h3 class="card-title">{{ cat.cat_name }}</h3>
+            <p class="card-text">{{ cat.cat_description }}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Color: {{ cat.cat_color }}</li>
+            <li class="list-group-item">Breed: {{ cat.cat_breed }}</li>
+            <li class="list-group-item">Age: {{ cat.cat_age }} years</li>
+            <li class="list-group-item">Gender: {{ cat.cat_gender }}</li>
+            <li class="list-group-item">{{ cat.good_cat_status }} Cat</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
