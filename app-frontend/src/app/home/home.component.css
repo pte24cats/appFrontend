@@ -245,7 +245,7 @@
     font-size: 0.4cm;
     margin-bottom: 3px;
     padding-left: 20px;
-    background: url('png/dotpaw.png') no-repeat left center;
+    background: url('/assets/png/dotpaw.png') no-repeat left center;
     background-size: 10px 10px;
     font-family: 'Times New Roman', Times, serif;
 }
