@@ -1,0 +1,101 @@
+<div>
+    <h1 style="margin: 2rem 0;">Edit Cats</h1>
+
+    <h3 style="margin-bottom: 2rem;">Add Cats</h3>
+    <div class="card">
+        <div class="card-body">
+            <form (ngSubmit)="addCat()">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Name</label>
+                        <input [(ngModel)]="newCat.cat_name" name="cat_name" type="text" class="form-control" id="inputName" placeholder="Cat name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Color</label>
+                        <input [(ngModel)]="newCat.cat_color" name="cat_color" type="text" class="form-control" id="inputColor" placeholder="Cat color" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <input [(ngModel)]="newCat.cat_description" name="cat_description" type="text" class="form-control" id="inputDescription" placeholder="Write a short description" required>
+                </div>
+                    
+                <label>Good Cat Status</label>
+                <select [(ngModel)]="newCat.good_cat_status" class="form-control" name="good_cat_status" type="checkbox">
+                    <option>Good</option>
+                    <option>Bad</option>
+                </select>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Age</label>
+                        <input [(ngModel)]="newCat.cat_age" class="form-control" name="cat_age" placeholder="Cat Age" type="number" required />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Gender</label>
+                        <select [(ngModel)]="newCat.cat_gender" class="form-control" name="good_cat_status">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                </div>  
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <label>Breed</label>
+                        <input [(ngModel)]="newCat.cat_breed" type="text" class="form-control" name="cat_breed" placeholder="Cat Breed" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label>Image</label>
+                        <div class="form-row" style="padding-left: 10px;">
+                            <input [ngModel]="newCat.cat_picture" name="cat_picture" type="file" (change)="onFileChange($event)" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button (click)="addCat()" type="submit" class="btn btn-lg btn-block bg-yellow mt-5">Add Cat</button>                        
+        </div>
+    </div>
+
+
+
+    <h3 style="margin-bottom: 2rem;">Remove Cats</h3>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Description</th>
+            <th>Good Status</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Breed</th>
+            <th>Picture</th>
+            <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cat of cats">
+            <td>{{ cat.cat_name }}</td>
+            <td>{{ cat.cat_color }}</td>
+            <td>{{ cat.cat_description }}</td>
+            <td>{{ cat.good_cat_status}}</td>
+            <td>{{ cat.cat_age }}</td>
+            <td>{{ cat.cat_gender }}</td>
+            <td>{{ cat.cat_breed }}</td>
+            <td>
+                <div *ngIf="newCat.cat_picture; else noImage">
+                    <img [src]="newCat.cat_picture" alt="Cat Picture" width="50" height="50"/>
+                </div>
+                <ng-template #noImage>
+                    <span>None</span>
+                </ng-template>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="deleteCat(cat.id)">Delete</button>
+            </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
